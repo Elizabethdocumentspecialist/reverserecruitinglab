@@ -88,7 +88,7 @@ export function Contact() {
                 name="service"
                 defaultValue=""
                 required
-                className="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3.5 text-sm text-foreground focus:outline-none focus:border-gold/60 transition-colors"
+                className="mt-2 w-full rounded-xl bg-foreground/[0.04] border border-foreground/15 px-4 py-3.5 text-sm text-foreground focus:outline-none focus:border-gold/60 transition-colors"
               >
                 <option value="" disabled className="bg-card">Select a service</option>
                 {services.map((s) => (
@@ -102,7 +102,7 @@ export function Contact() {
                 name="message"
                 rows={5}
                 placeholder="Tell me about your role, target market, and timeline."
-                className="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3.5 text-sm text-foreground focus:outline-none focus:border-gold/60 transition-colors resize-none"
+                className="mt-2 w-full rounded-xl bg-foreground/[0.04] border border-foreground/15 px-4 py-3.5 text-sm text-foreground focus:outline-none focus:border-gold/60 transition-colors resize-none"
               />
             </div>
             <button
@@ -129,7 +129,7 @@ function Field({ label, name, type = "text", placeholder }: { label: string; nam
         name={name}
         placeholder={placeholder}
         required
-        className="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-gold/60 transition-colors"
+        className="mt-2 w-full rounded-xl bg-foreground/[0.04] border border-foreground/15 px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-gold/60 transition-colors"
       />
     </div>
   );

@@ -5,14 +5,14 @@ const items = [
   {
     quote:
       "I just completed my review of the documents. I am extremely impressed — you do high quality professional work. Thank you for your services.",
-    name: "Bill R.",
+    name: "Bill",
     role: "Senior Director, Energy",
   },
   {
     quote:
-      "The work you have done is superb. Elizabeth's strategy completely repositioned my candidacy at the executive level.",
-    name: "Richard M.",
-    role: "VP, Financial Services",
+      "I think it looks great now. I've sent it to the recruiter — Elizabeth's eye for alignment and tone is unmatched.",
+    name: "Kevin K.",
+    role: "Executive, Consulting",
   },
   {
     quote:
@@ -22,15 +22,15 @@ const items = [
   },
   {
     quote:
-      "I think it looks great now. I've sent it to the recruiter — Elizabeth's eye for alignment and tone is unmatched.",
-    name: "Kevin K.",
-    role: "Executive, Consulting",
+      "The work you have done is superb. Elizabeth's strategy completely repositioned my candidacy at the executive level.",
+    name: "Richard M.",
+    role: "VP, Financial Services",
   },
 ];
 
 export function Testimonials() {
   return (
-    <section className="relative py-28">
+    <section className="relative py-24">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal className="max-w-3xl">
           <div className="text-xs uppercase tracking-[0.24em] text-gold">Client Voices</div>

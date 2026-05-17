@@ -1,4 +1,5 @@
 import { Mail, Linkedin } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export function Footer() {
   return (
@@ -19,7 +20,7 @@ export function Footer() {
           <div className="text-xs uppercase tracking-[0.2em] text-gold">Services</div>
           <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
             {["Reverse Recruiting","Executive Resumes","LinkedIn Branding","Federal Resumes","Interview Coaching"].map(s => (
-              <li key={s}><a href="#services" className="hover:text-foreground transition-colors">{s}</a></li>
+              <li key={s}><Link to="/services" className="hover:text-foreground transition-colors">{s}</Link></li>
             ))}
           </ul>
         </div>
@@ -27,10 +28,10 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="text-xs uppercase tracking-[0.2em] text-gold">Explore</div>
           <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
-            <li><a href="#about" className="hover:text-foreground transition-colors">About</a></li>
-            <li><a href="#process" className="hover:text-foreground transition-colors">Process</a></li>
-            <li><a href="#results" className="hover:text-foreground transition-colors">Results</a></li>
-            <li><a href="#faq" className="hover:text-foreground transition-colors">FAQ</a></li>
+            <li><Link to="/about" className="hover:text-foreground transition-colors">About</Link></li>
+            <li><Link to="/process" className="hover:text-foreground transition-colors">Process</Link></li>
+            <li><Link to="/testimonials" className="hover:text-foreground transition-colors">Testimonials</Link></li>
+            <li><Link to="/faq" className="hover:text-foreground transition-colors">FAQ</Link></li>
           </ul>
         </div>
 
@@ -43,7 +44,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+      <div className="mx-auto max-w-7xl px-6 mt-16 pt-8 border-t border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <div>© {new Date().getFullYear()} Elizabeth Career Atelier. All rights reserved.</div>
         <div className="uppercase tracking-[0.2em]">Crafted with discretion.</div>
       </div>
