@@ -46,7 +46,6 @@ export function Footer() {
 
       <div className="mx-auto max-w-7xl px-6 mt-16 pt-8 border-t border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <div>© {new Date().getFullYear()} Elizabeth Career Atelier. All rights reserved.</div>
-        <div className="uppercase tracking-[0.2em]">Crafted with discretion.</div>
       </div>
     </footer>
   );
