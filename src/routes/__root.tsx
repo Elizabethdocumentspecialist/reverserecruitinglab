@@ -10,6 +10,7 @@ import {
 
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
+import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 import appCss from "../styles.css?url";
 
@@ -120,6 +121,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
+        <WhatsAppButton />
         <Toaster position="top-center" />
       </div>
     </QueryClientProvider>
